@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper form-input">
+        <form action="#" autocomplete="off">
+            <h2 class="title">Quizz </h2>
+
+        <!-- question -->
+        <div class="box">
+            <input type="text" name="question" id="question" placeholder="Câu Hỏi">
+        </div>
+        <!-- correct answer -->
+        <div class="box">
+            <input type="text" name="correct" id="correct" class="answer" placeholder="Đáp án đúng">
+        </div>
+        <!-- incorrect ans -->
+        <div class="box">
+            <input type="text" name="answer" class="answer" placeholder="Đáp án sai">
+        </div>
+        <!-- answer ans -->
+        <div class="box">
+            <input type="text" name="answer" class="answer" placeholder="Đáp án sai">
+        </div>
+        <!-- answer ans -->
+        <div class="box">
+            <input type="text" name="answer" class="answer" placeholder="Đáp án sai">
+        </div>
+
+        <div class="btn">
+            <button id="save">Lưu</button>
+            <button id="start">Bắt đầu</button>
+        </div>
+        </form>
+    </div>
+
+    <div class="wrapper form-quiz hide">
+        <div id="test">
+            <h3 class="test_question"></h3>
+            <ul class="test_answers">
+                <li class="test_answer">
+                    <p for="a" class="text_answer"></p>
+                    <input type="radio" class="answerV" name="answerV">
+                </li>
+                <li class="test_answer">
+                    <p for="b" class="text_answer"></p>
+                    <input type="radio" class="answerV" name="answerV">
+                </li>
+                <li class="test_answer">
+                    <p for="c" class="text_answer"></p>
+                    <input type="radio" class="answerV" name="answerV">
+                </li>
+                <li class="test_answer">
+                    <p for="d" class="text_answer"></p>
+                    <input type="radio" class="answerV" name="answerV">
+                </li>
+            </ul>
+            <div class="btn">
+                <button id="next">Tiếp</button>
+                <button id="submit">Hoàn thành</button>
+            </div>
+        </div>
+    </div>
+    <div id="results">
+
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
